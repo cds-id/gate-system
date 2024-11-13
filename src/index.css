@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 6% 97%; /* #f5f9fa (paletteColor7) */
+    --foreground: 200 5% 23%; /* #516066 (paletteColor1) */
+
+    --card: 0 0% 100%; /* #ffffff (paletteColor5) */
+    --card-foreground: 200 14% 11%; /* #171d1f (paletteColor2) */
+
+    --popover: 0 0% 100%; /* #ffffff (paletteColor5) */
+    --popover-foreground: 200 14% 11%; /* #171d1f (paletteColor2) */
+
+    --primary: 123 48% 27%; /* #24642a (paletteColor3) */
+    --primary-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --secondary: 89 57% 52%; /* #7fc348 (paletteColor4) */
+    --secondary-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --muted: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+    --muted-foreground: 200 5% 23%; /* #516066 (paletteColor1) */
+
+    --accent: 191 38% 45%; /* #478f9e (paletteColor8) */
+    --accent-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+    --input: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+    --ring: 123 48% 27%; /* #24642a (paletteColor3) */
+
+    --chart-1: 200 5% 23%; /* #516066 (paletteColor1) */
+    --chart-2: 123 48% 27%; /* #24642a (paletteColor3) */
+    --chart-3: 89 57% 52%; /* #7fc348 (paletteColor4) */
+    --chart-4: 191 38% 45%; /* #478f9e (paletteColor8) */
+    --chart-5: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 200 14% 11%; /* #171d1f (paletteColor2) */
+    --foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --card: 200 5% 23%; /* #516066 (paletteColor1) */
+    --card-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --popover: 200 5% 23%; /* #516066 (paletteColor1) */
+    --popover-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --primary: 89 57% 52%; /* #7fc348 (paletteColor4) */
+    --primary-foreground: 200 14% 11%; /* #171d1f (paletteColor2) */
+
+    --secondary: 123 48% 27%; /* #24642a (paletteColor3) */
+    --secondary-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --muted: 200 5% 23%; /* #516066 (paletteColor1) */
+    --muted-foreground: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+
+    --accent: 191 38% 45%; /* #478f9e (paletteColor8) */
+    --accent-foreground: 0 0% 100%; /* #ffffff (paletteColor5) */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 5% 23%; /* #516066 (paletteColor1) */
+    --input: 200 5% 23%; /* #516066 (paletteColor1) */
+    --ring: 89 57% 52%; /* #7fc348 (paletteColor4) */
+
+    --chart-1: 89 57% 52%; /* #7fc348 (paletteColor4) */
+    --chart-2: 191 38% 45%; /* #478f9e (paletteColor8) */
+    --chart-3: 123 48% 27%; /* #24642a (paletteColor3) */
+    --chart-4: 195 11% 86%; /* #d7dfe0 (paletteColor6) */
+    --chart-5: 200 5% 23%; /* #516066 (paletteColor1) */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
