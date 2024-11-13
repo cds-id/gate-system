@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/admin',
-    element: <DashboardLayout />,
+    element: <DashboardLayout userType="admin" />,
     children: [
       {
         path: '',
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/gatekeeper',
-    element: <DashboardLayout />,
+    element: <DashboardLayout userType="admin" />,
     children: [
       {
         path: '',

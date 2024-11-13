@@ -2,18 +2,15 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Separator } from '@/components/ui/separator'
 
 import {
   HomeIcon,
   UsersIcon,
   CalendarIcon,
   BellIcon,
-  DocumentReportIcon,
   CogIcon,
-  MenuIcon,
-  XIcon,
 } from '@heroicons/react/24/outline'
+import { DocumentIcon } from '@heroicons/react/20/solid'
 
 type NavItem = {
   name: string
@@ -31,7 +28,7 @@ const adminNavItems: NavItem[] = [
   { name: 'Students', href: '/admin/students', icon: UsersIcon },
   { name: 'Scheduling', href: '/admin/scheduling', icon: CalendarIcon },
   { name: 'Notifications', href: '/admin/notifications', icon: BellIcon },
-  { name: 'Reports', href: '/admin/reports', icon: DocumentReportIcon },
+  { name: 'Reports', href: '/admin/reports', icon: DocumentIcon },
   { name: 'Settings', href: '/admin/settings', icon: CogIcon },
 ]
 
@@ -42,7 +39,7 @@ const gatekeeperNavItems: NavItem[] = [
   {
     name: 'Activity Log',
     href: '/gatekeeper/activity-log',
-    icon: DocumentReportIcon,
+    icon: DocumentIcon,
   },
 ]
 
@@ -74,7 +71,6 @@ export function DashboardLayoutComponent({
               onClick={() => setSidebarOpen(false)}
             >
               <span className="sr-only">Close sidebar</span>
-              <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
             </Button>
           </div>
           <div className="flex-shrink-0 flex items-center px-4">
@@ -162,7 +158,6 @@ export function DashboardLayoutComponent({
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
-            <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </Button>
           <div className="flex-1 px-4 flex justify-between">
             <div className="flex-1 flex">

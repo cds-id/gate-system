@@ -21,6 +21,7 @@ export function LoginComponent() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
+    throw new Error('An error occurred. Please try again.')
 
     try {
       if (email === 'admin@example.com' && password === 'password') {
