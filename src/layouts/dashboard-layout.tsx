@@ -35,6 +35,7 @@ const adminNavItems: NavItem[] = [
 const gatekeeperNavItems: NavItem[] = [
   { name: 'Dashboard', href: '/gatekeeper', icon: HomeIcon },
   { name: 'Daily Tasks', href: '/gatekeeper/daily-tasks', icon: CalendarIcon },
+  { name: 'Kiosk', href: '/gatekeeper/kiosk', icon: UsersIcon },
   { name: 'Gatekeeping', href: '/gatekeeper/gatekeeping', icon: UsersIcon },
   {
     name: 'Activity Log',

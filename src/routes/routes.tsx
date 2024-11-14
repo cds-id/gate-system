@@ -4,6 +4,7 @@ import DashboardLayout from '@/layouts/dashboard-layout'
 import { LoginComponent } from '@/components/components-login'
 import { AdminDashboard } from '@/pages/admin/dashboard'
 import { GatekeeperDashboard } from '@/pages/gatekeeper/dashboard'
+import { GatekeeperKiosk } from '@/pages/gatekeeper/kiosk'
 
 export const router = createBrowserRouter([
   {
@@ -32,11 +33,15 @@ export const router = createBrowserRouter([
   },
   {
     path: '/gatekeeper',
-    element: <DashboardLayout userType="admin" />,
+    element: <DashboardLayout userType="gatekeeper" />,
     children: [
       {
         path: '',
         element: <GatekeeperDashboard />,
+      },
+      {
+        path: 'kiosk',
+        element: <GatekeeperKiosk />,
       },
     ],
   },
